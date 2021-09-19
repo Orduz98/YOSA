@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Tahoma, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #070707;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .site-title {
+            width: 30%;
+            background-color: rgb(171, 235, 198);
+            color: #0c0b0b;
+            text-align: center;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 120px;
+        }
+
+        /* CUSTOMIZE THE CAROUSEL
+        -------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 40rem;
+        }
+
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 40rem;
+        }
+
+        .carousel-item {
+            color: white;
+            font-weight: bold;
+        }
+
+        /*-------------------------------------------------- */
+
+        .seccion-noticias,
+        .seccion-equipo {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .seccion-noticias,
+        .header-container {
+            background-color: #f7f7f7
+        }
+
+
+        .seccion-noticias {
+            flex-wrap: wrap;
+        }
+
+        .services-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .news-info {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+
+        .seccion-pie {
+            background-color: #25294f;
+            height: 200px;
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .services-info__imagen {
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .team-info {
+            width: 25%;
+            padding: 15px;
+        }
+
+        .team-info__imagen {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+    <!-- inicio encabezado del sitio -->
+    <div class="header-section">
+        <div class="header-container">
+
+            <div class="site-title">
+                <h1>良さ - yosa</h1>
+            </div>
+
+            <!-- Inicio menú navegación -->
+            <nav>
+                <ul class="site-nav">
+                    <a href="#">Inicio</a>
+                    <a href="#services">Registro</a>
+                    <a href="#news">Buscar</a>
+                    <a href="#team">Contacto</a>
+                </ul>
+            </nav>
+            <!-- Fin menú navegación -->
+
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./logoabc.png" alt="Logo MisionTic 2022">
+            </div>
+        </div>
+
+        <!-- inicio carrusel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="logotitulo.jpeg" class="d-block w-100" alt="imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carrusel_2.jpg" class="d-block w-100" alt="imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Contigo soy mejor</h5>
+                        <p>Cuando te sientas solo no lo dudes, venme a buscar, ¡yo siempre estaré listo para quererte y
+                            jugar!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="carrusel_3.jpg" class="d-block w-100" alt="imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Salvame</h5>
+                        <p>Salvar a un animal no cambiará el mundo, pero si cambiará el mundo de ese animal
+                        <p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- fin del carrusel -->
+    <!-- fin encabezado del sitio -->
+
+    <!-- inicio contenido principal -->
+    <section >
+        <h1>Servicios</h1>
+        <!-- inicio sección de servicios -->
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Buscar</strong>
+                        <h3 class="mb-0">Adopta una mascota</h3>
+                        <div class="mb-1 text-muted">_______________________________________</div>
+                        <p class="card-text mb-auto">Si quieres brindar hogar a un animal y hacerlo parte de tu nucleo
+                            familiar, haz click aquí.</p>
+                        <!--a href="#" class="stretched-link">Continue reading</a-->
+                        <a class="btn btn-success" href="buscar.html" role="button">Adoptar</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="adoptame.jpg" role="img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Registrar</strong>
+                        <h3 class="mb-0">Coloca en adopción</h3>
+                        <div class="mb-1 text-muted">_______________________________________</div>
+                        <p class="mb-auto">Si buscas dar en adopción a un animal para que encuentre un nuevo hogar, haz
+                            click aquí.</p>
+                        <!--a href="#" class="stretched-link">Continue reading</a-->
+                        <a class="btn btn-success" href="añadir.html" role="button">Dar en adopción</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="200" height="250" src="adoptado.jpg" role="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin sección de servicios -->
+
+
+
+        <h1>Noticias</h1>
+        <!-- inicio sección de noticias-->
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="picaso.jpg" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Picasso, el perro que iba a ser sacrificado por tener una “imperfección”
+                            en su rostro.</h5>
+                        <p class="card-text">Picasso es un tierno perro no fue adoptado por una “imperfección” en su
+                            rostro e iba a ser sacrificado; sin embargo, alguien salvó su vida y ahora es toda una
+                            estrella en redes sociales..</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.colombia.com/mascotas/noticias/picasso-perro-iba-a-ser-sacrificado-por-imperfeccion-en-rostro-317279">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="mundial.jpg" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Por qué se celebra el Día Mundial del Perro el 21 de julio?</h5>
+                        <p class="card-text">Durante esta fecha en distintos países se organizan jornadas de vacunación,
+                            esterilización, atención medica y adopción, campañas que en gran medida son promovidas por
+                            fundaciones protectoras de animales. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.eltiempo.com/vida/mascotas/dia-mundial-del-perro-por-que-se-celebra-el-21-de-julio-604710">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pandemia.jpg" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">En pandemia se logró cifra récord de adopción de perros callejeros en
+                            Bogotá</h5>
+                        <p class="card-text">A pesar de las miles de mascostas que fueron abandonadas en medio de los
+                            confinamientos, muchos hogares de la ciudad se solidarizaron con los peludos de cuatro patas
+                            que habitan en las calles.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.infobae.com/america/colombia/2021/08/20/en-pandemia-se-logro-cifra-record-de-adopcion-de-perros-callejeros-en-bogota/">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="Futbol.jpeg" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rumania promueve la adopción de perros callejeros antes de los partidos
+                            de futbol</h5>
+                        <p class="card-text">¡Y ya sucedió! Los primeros en hacerlo fueron los jugadores del Dinamo,
+                            quienes se enfrentaron al FCSB. Y aunque perdieron 0-6, con esta acción ganaron nuestros
+                            corazones</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.lavanguardia.com/natural/20210916/7725697/rumania-presentara-perros-adopcion-partidos-futbol-pmv.html#:~:text=En%20Ruman%C3%ADa%2C%20miles%20de%20perros,se%20quiere%20promover%20su%20adopci%C3%B3n&text=Antes%20del%20inicio%20del%20partido,a%20varios%20perros%20en%20brazos.">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="perla.png" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Medellín habilita WhatsApp Center para adoptar animales de compañía de La
+                            Perla</h5>
+                        <p class="card-text">El Centro de Bienestar Animal La Perla, dispuso de una línea de atención de
+                            WhatsApp 3117963457 para que las personas hagan sus solicitudes de adopción</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.medellin.gov.co/irj/portal/medellin?NavigationTarget=contenido/10691-Medellin-habilita-WhatsApp-Center-para-adoptar-animales-de-compania-de-La-Perla">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="rescatistas.png" width="200" height="200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lo que debes saber sobre los perros rescatistas de la CDMX</h5>
+                        <p class="card-text">Los perros de rescate se han ganado la admiración de los mexicanos por
+                            haber salvado vidas después del sismo del 19 de septiembre.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a class="btn btn-outline-success"
+                                    href="https://www.ngenespanol.com/naturaleza/informacion-sobre-los-perros-de-rescate/">Ver publicación »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin sección de noticias -->
+
+
+        <h1>Equipo</h1>
+        <!-- inicio sección de equipo -->
+        <section id="team" class="seccion-equipo">
+            <div class="container marketing">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="perfil_stefany.jpg" width="200" height="200" class="bd-placeholder-img rounded-circle"
+                            alt="...">
+                        <h2>Stefany Tirado</h2>
+                        <p>Joven entusiasta por el mundo de la programación y el análisis de datos, en su tiempo libre
+                            le gusta escuchar RAP</p>
+                        <p><a class="btn btn-secondary"
+                                href="https://www.linkedin.com/in/stefany-paola-tirado-de-stefano/">View details
+                                &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                dy=".3em">140x140</text>
+                        </svg>
+                        <h2>Heading</h2>
+                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                            second column.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                dy=".3em">140x140</text>
+                        </svg>
+                        <h2>Heading</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                dy=".3em">140x140</text>
+                        </svg>
+                        <h2>Heading</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
+                                dy=".3em">140x140</text>
+                        </svg>
+                        <h2>Heading</h2>
+                        <p>And lastly this, the third column of representative placeholder content.</p>
+                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+        </section>
+        <!-- fin sección de equipo -->
+    </div>
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+    <div class="seccion-pie">
+        <article>
+            <h2>Contacto</h2>
+            <p>Aquí van varias lineas</p>
+            <p>Donde va la información de contacto</p>
+            <p>Como el teléfono y demás</p>
+        </article>
+        <article>
+            <h2>Otra Información</h2>
+            <p>Aquí van varias lineas</p>
+            <p>Donde va la otra información</p>
+            <p>Como el mapa del sitio o enlaces importantes</p>
+        </article>
+    </div>
+    <!-- fin pie del sitio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
