@@ -28,7 +28,7 @@
         }
 
         section {
-            margin: 70px;
+            margin: 50px;
         }
 
         .header-section {
@@ -93,6 +93,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             text-align: center;
+            height: 650px;
         }
 
         .seccion-pie {
@@ -221,9 +222,10 @@
                             <div class="invalid-feedback">
                                 Campo obligatorio.
                             </div>
-                            <label class="form-label" for="customFile">Default file input example</label>  
-                            <input type="file" class="form-control" id="customFile"/>
                         </div>
+
+                        <label class="form-label" for="customFile" style="margin-left: center">Ingrese una imagen de la mascota</label>  
+                        <input type="file" class="form-control" id="customFile" style="width: 500px; margin-left: 150px;"/>
 
                         <h4 class="mb-3">INFORMACIÓN DE CONTACTO </h4>
                         <form class="needs-validation" novalidate="">
@@ -256,7 +258,9 @@
                                     </div>
                                 </div>
 
-                                <button class="btn-success" type="submit" style="border-radius: 20px; width: 200px; height: 50px; font-weight: bold">Adoptar</button>
+                                <div>
+                                    <button class="btn-success" type="submit" style="border-radius: 20px; width: 200px; height: 50px; font-weight: bold">Adoptar</button>
+                                </div>
                         </form>
                     </div>
         </section>
