@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yosa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #070707;
+        }
+
+        section {
+            margin: 70px;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .site-title {
+            width: 30%;
+            background-color: rgb(171, 235, 198);
+            color: #0c0b0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 120px;
+        }
+
+        /* CUSTOMIZE THE CAROUSEL
+        -------------------------------------------------- */
+
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 4rem;
+        }
+
+        /* Since positioning the image, we need to help out the caption */
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+
+        /* Declare heights because of positioning of img element */
+        .carousel-item {
+            height: 40rem;
+        }
+
+        .carousel-item>img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 40rem;
+        }
+
+        .carousel-item {
+            color: black;
+            font-weight: bold;
+        }
+        /*-------------------------------------------------- */
+
+
+        .row{
+            justify-content:space-evenly;
+        }
+
+        .col-lg-4{
+            inline-size: 320px;
+            overflow-wrap: break-word;
+        }
+
+        .seccion-noticias,
+        .header-container {
+            background-color: white;
+        }
+
+
+        .seccion-noticias {
+            flex-wrap: wrap;
+        }
+
+        .services-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .news-info {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .news-info__title {
+            align-self: center;
+        }
+
+        .seccion-pie {
+            background-color: rgb(171, 235, 198);
+            height: 200px;
+            display: flex;
+            color: black;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+
+        .copyright {
+            background-color: rgb(171, 235, 198);
+            height: 50px;
+            display: flex;
+            color: black;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .services-info__imagen {
+            border-radius: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .team-info {
+            width: 25%;
+            padding: 15px;
+        }
+
+        .team-info__imagen {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+
+    <!-- inicio encabezado del sitio -->
+    <div class="header-section">
+        <div class="header-container">
+
+            <div class="site-title">
+                <h1>良さ - yosa</h1>
+            </div>
+
+            <!-- Inicio menú navegación -->
+                <ul class="site-nav">
+                    <a href="index.html">Inicio</a>
+                    <a href="Añadir.html">Registro</a>
+                    <a href="Buscar.html">Buscar</a>
+                </ul>
+            <!-- Fin menú navegación -->
+
+            <div class="logo-container">
+                <img class="logo-container__site-logo" src="./logoabc.png" alt="Logo MisionTic 2022">
+            </div>
+        </div>
+
+        <!-- inicio carrusel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="logotitulo.jpeg" class="d-block w-100" alt="imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">º
+                    <img src="japon_carrusel.jpg" class="d-block w-100" alt="imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- fin del carrusel -->
+    <!-- fin encabezado del sitio -->
+
+    <!-- inicio contenido principal -->
+    <main>
+        <section id="services" class="seccion-services">
+            <h1>Servicios</h1>
+            <!-- inicio sección de servicios -->
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">Buscar</strong>
+                            <h3 class="mb-0">Adopta una mascota</h3>
+                            <div class="mb-1 text-muted">_______________________________________</div>
+                            <p class="card-text mb-auto" style="text-align:justify">Si quieres brindar hogar a un animal y hacerlo parte de tu nucleo
+                                familiar, haz click aquí.</p>
+                            <!--a href="#" class="stretched-link">Continue reading</a-->
+                            <a class="btn btn-success" href="buscar.html" target="_blank" role="button">Adoptar</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="adoptame.jpg" role="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">Registrar</strong>
+                            <h3 class="mb-0">Coloca en adopción</h3>
+                            <div class="mb-1 text-muted">_______________________________________</div>
+                            <p class="mb-auto" style="text-align:justify">Si buscas dar en adopción a un animal para que encuentre un nuevo hogar, haz
+                                click aquí.</p>
+                            <!--a href="#" class="stretched-link">Continue reading</a-->
+                            <a class="btn btn-success" href="añadir.html" target="_blank" role="button">Dar en adopción</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="200" height="250" src="adoptado.jpg" role="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fin sección de servicios -->
+
+
+        <section id="noticias" class="seccion-noticias">
+            <h1>Noticias</h1>
+            <!-- inicio sección de noticias-->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="picaso.jpg" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Picasso, el perro que iba a ser sacrificado por tener una “imperfección”
+                                en su rostro.</h5>
+                            <p class="card-text" style="text-align:justify">Picasso es un tierno perro no fue adoptado por una “imperfección” en su
+                                rostro e iba a ser sacrificado; sin embargo, alguien salvó su vida y ahora es toda una
+                                estrella en redes sociales.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.colombia.com/mascotas/noticias/picasso-perro-iba-a-ser-sacrificado-por-imperfeccion-en-rostro-317279" target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="mundial.jpg" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Por qué se celebra el Día Mundial del Perro el 21 de julio?</h5>
+                            <p class="card-text" style="text-align:justify">Durante esta fecha en distintos países se organizan jornadas de vacunación,
+                                esterilización, atención medica y adopción, campañas que en gran medida son promovidas por
+                                fundaciones protectoras de animales. </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.eltiempo.com/vida/mascotas/dia-mundial-del-perro-por-que-se-celebra-el-21-de-julio-604710" target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="pandemia.jpg" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">En pandemia se logró cifra récord de adopción de perros callejeros en
+                                Bogotá</h5>
+                            <p class="card-text" style="text-align:justify">A pesar de las miles de mascostas que fueron abandonadas en medio de los
+                                confinamientos, muchos hogares de la ciudad se solidarizaron con los peludos de cuatro patas
+                                que habitan en las calles, mejorando las cifras de adopción.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.infobae.com/america/colombia/2021/08/20/en-pandemia-se-logro-cifra-record-de-adopcion-de-perros-callejeros-en-bogota/" target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="Futbol.jpeg" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rumania promueve la adopción de perros callejeros antes de los partidos
+                                de futbol</h5>
+                            <p class="card-text" style="text-align:justify">¡Y ya sucedió! Los primeros en hacerlo fueron los jugadores del Dinamo,
+                                quienes se enfrentaron al FCSB. Y aunque perdieron 0-6, con esta acción ganaron nuestros
+                                corazones.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.lavanguardia.com/natural/20210916/7725697/rumania-presentara-perros-adopcion-partidos-futbol-pmv.html#:~:text=En%20Ruman%C3%ADa%2C%20miles%20de%20perros,se%20quiere%20promover%20su%20adopci%C3%B3n&text=Antes%20del%20inicio%20del%20partido,a%20varios%20perros%20en%20brazos." target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="perla.png" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Medellín habilita WhatsApp Center para adoptar animales de compañía de La
+                                Perla</h5>
+                            <p class="card-text" style="text-align:justify">El Centro de Bienestar Animal La Perla, dispuso de una línea de atención de
+                                WhatsApp 3117963457 para que las personas hagan sus solicitudes de adopción.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.medellin.gov.co/irj/portal/medellin?NavigationTarget=contenido/10691-Medellin-habilita-WhatsApp-Center-para-adoptar-animales-de-compania-de-La-Perla" target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="rescatistas.png" width="200" height="200" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lo que debes saber sobre los perros rescatistas de la CDMX</h5>
+                            <p class="card-text" style="text-align:justify">Los perros de rescate se han ganado la admiración de los mexicanos por
+                                haber salvado vidas después del sismo del 19 de septiembre.
+                                Los rescatistas no trabajan solos, los perros de rescate, también llamados perros binomio estan para ayudar.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-outline-success"
+                                        href="https://www.ngenespanol.com/naturaleza/informacion-sobre-los-perros-de-rescate/" target="_blank">Ver publicación »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--fin sección de noticias -->
+
+
+        <!-- inicio sección de equipo -->
+            <h1>Equipo</h1>
+            <section id="team" class="seccion-team">
+            <div class="container marketing">
+                <div class="row">
+                        <div class="col-lg-4">
+                            <center><img src="perfil_stefany.jpg" width="150" height="150" class="bd-placeholder-img rounded-circle" alt="..."></center>
+                            <center><h2>Stefany Tirado</h2></center>
+                            <p style="text-align:justify">Entusiasta por el mundo de la programación y el análisis de datos, en su tiempo libre
+                                le gusta escuchar RAP.
+                            </p><a class="btn btn-secondary"
+                                    href="https://www.linkedin.com/in/stefany-paola-tirado-de-stefano/" target="_blank">Ver más
+                                    &raquo;</a></p>
+                        </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <center><img src="perfil_maria.jpg" width="150" height="150" class="bd-placeholder-img rounded-circle" alt="..."></center>
+                        <center><h2>Maria Gómez</h2></center>
+                            <p style="text-align:justify">Soy estudiante de ingeniería de sistemas, me gusta la programación, las redes y los gatos.
+                            </p><a class="btn btn-secondary"
+                                href="https://www.instagram.com/mariagomez099/?hl=es" target="_blank">Ver más
+                                    &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <center><img src="perfil_michael.jpeg" width="150" height="150" class="bd-placeholder-img rounded-circle alt="..."></center>
+                        <center><h2>Michael Velasquez</h2></center>
+                            <p style="text-align:justify">Apasionado por el desarrollo web, la Tecnología, la comida y las largas rutas en bici.
+                            </p><a class="btn btn-secondary"
+                                href="https://www.linkedin.com/in/michael-velasquez-30563419a/" target="_blank">Ver más
+                                    &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+
+                    <div class="col-lg-4">
+                        <center><img src="perfil_kevin.jpeg" width="150" height="150" class="bd-placeholder-img rounded-circle" alt="..."></center>
+                        <center><h2>Kevin Jimenez</h2></center>
+                            <p style="text-align:justify">
+                                Soy una persona responsable, honesta y dinámica con deseos de superación; 
+                                aprendo con rapidez y me intereso por cumplir de manera adecuada las distintas actividades que realizo.
+                            </p><a class="btn btn-secondary"
+                                href="https://www.linkedin.com/in/kevin-jimenez-633632205" target="_blank">Ver más
+                                    &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4">
+                        <center><img src="perfil_esteban.jpg" width="150" height="150" class="bd-placeholder-img rounded-circle" alt="..."></center>
+                        <center><h2>Esteban Orduz</h2></center>
+                            <p style="text-align:justify">Soy ingeniero Mecatrónico, me gusta la automatización industrial y programación de micro controladores, mi pasión es visitar y conocer los nevados de Colombia.</p>
+                            <p><a class="btn btn-secondary"
+                                href="https://instagram.com/estebanorduz129?r=nametag" target="_blank">Ver más
+                                    &raquo;</a></p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+        </section>
+        <!-- fin sección de equipo -->
+    </main>
+
+    <!-- fin contenido principal -->
+
+    <!-- Inicio pie del sitio -->
+    <footer>
+        <div class="seccion-pie">
+            <article>
+                <img src="logo.png" width="150" height="150">
+            </article>
+            <article>
+                <h2>Contacto</h2>
+                <p>envianos un mensaje a:</p>
+                <p>correo: yosa_adopta_mascota@gmail.com</p>
+                <p>teléfono: 546425</p>
+            </article>
+            <article>
+                <h2>Otra Información</h2>
+                <p>Politica YOSA</p>
+                <p>la plataforma no se hace responsable por publicaciones falsas</p>
+            </article>
+            <article>
+                <img src="logomision.png" width="200" height="100">
+            </article>
+        </div>
+        <div class="copyright"> 
+            <p> <strong>© copyright 2021- all right reserved</strong></p>
+        </div>
+    </footer>
+    <!-- fin pie del sitio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+</html>

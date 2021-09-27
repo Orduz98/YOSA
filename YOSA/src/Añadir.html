@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir mascostas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #070707;
+        }
+
+        section {
+            margin: 50px;
+        }
+
+        .header-section {
+            margin-bottom: 100px;
+        }
+
+        .header-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .site-title {
+            width: 30%;
+            background-color: rgb(171, 235, 198);
+            color: #0c0b0b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .site-nav {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .site-nav>a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .site-nav>a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .logo-container {
+            width: 30%;
+        }
+
+        .logo-container__site-logo {
+            height: 120px;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner>img {
+            width: 100%;
+            height: 400px;
+            max-width: 1400px;
+            object-fit: cover;
+        }
+
+        .formulario{
+            border:  rgb(149, 235, 185) 5px inset;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            height: 650px;
+        }
+
+        .seccion-pie {
+            background-color: rgb(149, 235, 185);
+            height: 200px;
+            display: flex;
+            color: black;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+
+        .copyright {
+            background-color: rgb(171, 235, 198);
+            height: 50px;
+            display: flex;
+            color: black;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+
+    <!-- inicio encabezado del sitio -->
+    <header>
+        <section class="header-section">
+            <div class="header-container">
+
+                <div class="site-title">
+                    <h1>良さ - yosa</h1>
+                </div>
+    
+                <!-- Inicio menú navegación -->
+                    <ul class="site-nav">
+                        <a href="index.html">Inicio</a>
+                        <a href="Añadir.html">Registro</a>
+                        <a href="Buscar.html">Buscar</a>
+                    </ul>
+                <!-- Fin menú navegación -->
+    
+                <div class="logo-container">
+                    <img class="logo-container__site-logo" src="./logoabc.png" alt="Logo MisionTic 2022">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- fin encabezado del sitio -->
+
+
+    <!-- inicio contenido principal -->
+
+    <main>
+        <section class = "formulario">
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">INFORMACIÓN DE LA MASCOTA</h4>
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-sm-5">
+                            <label for="NombreAnimal" class="form-label">Nombre Mascota: </label>
+                            <input type="text" class="form-control" id="NombreAnimal" placeholder="" value=""
+                                required="">
+                            <div class="invalid-feedback">
+                                Campo obligatorio.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <label for="Edad" class="form-label">Edad: </label>
+                            <input type="text" class="form-control" id="Edad" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Campo obligatorio.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <label for="Raza" class="form-label">Raza: </label>
+                            <input type="text" class="form-control" id="Raza" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Campo obligatorio.
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="Ciudad" class="form-label">Ciudad: </label>
+                            <select class="form-select" id="Ciudad" required="">
+                                <option value="">Buscar...</option>
+                                <option>Armenia</option>
+                                <option>Barrancabereja</option>
+                                <option>Barranquilla</option>
+                                <option>Bogotá</option>
+                                <option>Bucaramanga</option>
+                                <option>Buga</option>
+                                <option>Cali</option>
+                                <option>Cartagena</option>
+                                <option>Chía</option>
+                                <option>Cúcuta</option>
+                                <option>Duitama</option>
+                                <option>Florencia</option>
+                                <option>Fusagasugá</option>
+                                <option>Girardot</option>
+                                <option>Honda</option>
+                                <option>Ibagué</option>
+                                <option>Ipiales</option>
+                                <option>Jamundí</option>
+                                <option>Leticia</option>
+                                <option>Manizales</option>
+                                <option>Mariquita</option>
+                                <option>Medellín</option>
+                                <option>Monpox</option>
+                                <option>Monteria</option>
+                                <option>Murillo</option>
+                                <option>Neiva</option>
+                                <option>Pamplona</option>
+                                <option>Pasto</option>
+                                <option>Pereira</option>
+                                <option>Popayán</option>
+                                <option>Riohacha</option>
+                                <option>San Andres y Providencia</option>
+                                <option>San Antero</option>
+                                <option>Santa Marta</option>
+                                <option>Santé de Antioquia</option>
+                                <option>Sevilla</option>
+                                <option>Sincelejos</option>
+                                <option>Sogamoso</option>
+                                <option>Tabio</option>
+                                <option>Tocancinpá</option>
+                                <option>Tolú</option>
+                                <option>Tuluá</option>
+                                <option>Tumaco</option>
+                                <option>Tunja</option>
+                                <option>Valledupar</option>
+                                <option>Villavicencio</option>
+                                <option>Yopal</option>
+                                <option>Zipaquirá</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Campo obligatorio.
+                            </div>
+                        </div>
+
+                        <label class="form-label" for="customFile" style="margin-left: center">Ingrese una imagen de la mascota</label>  
+                        <input type="file" class="form-control" id="customFile" style="width: 500px; margin-left: 150px;"/>
+
+                        <h4 class="mb-3">INFORMACIÓN DE CONTACTO </h4>
+                        <form class="needs-validation" novalidate="">
+                            <div class="row g-3">
+                                <div class="col-sm-5">
+                                    <label for="NombreDueño" class="form-label">Nombre del dueño: </label>
+                                    <input type="text" class="form-control" id="NombreDueño" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Campo obligatorio.
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5">
+                                    <label for="Numero" class="form-label">Numero de telefono: </label>
+                                    <input type="text" class="form-control" id="Numero" placeholder="" value=""
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Campo obligatorio.
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <label for="correo" class="form-label">Correo electronico: </label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" id="correo" placeholder="" required="">
+                                        <div class="invalid-feedback">
+                                            Campo obligatorio.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn-success" type="submit" style="border-radius: 20px; width: 200px; height: 50px; font-weight: bold">Adoptar</button>
+                                </div>
+                        </form>
+                    </div>
+        </section>
+    </main>
+
+    <!-- Inicio pie del sitio -->
+    <footer>
+        <div class="seccion-pie">
+            <article>
+                <img src="logo.png" width="150" height="150">
+            </article>
+            <article>
+                <h2>Contacto</h2>
+                <p>envianos un mensaje a:</p>
+                <p>correo: yosa_adopta_mascota@gmail.com</p>
+                <p>teléfono: 546425</p>
+            </article>
+            <article>
+                <h2>Otra Información</h2>
+                <p>Politica YOSA</p>
+                <p>la plataforma no se hace responsable por publicaciones falsas</p>
+            </article>
+            <article>
+                <img src="logomision.png" width="200" height="100">
+            </article>
+        </div>
+        <div class="copyright"> 
+            <p> <strong>© copyright 2021- all right reserved</strong></p>
+        </div>
+    </footer>
+    <!-- fin pie del sitio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+</html>
